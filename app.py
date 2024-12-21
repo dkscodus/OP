@@ -4,6 +4,7 @@ import google.generativeai as genai
 
 # 설정: 생성 AI API 키 입력
 genai.configure(api_key="AIzaSyBcyGu7CKosQAukptvYEf0aFttt6_vMAa4")
+genai.configure(api_key='AIzaSyBcyGu7CKosQAukptvYEf0aFttt6_vMAa4')
 
 # Streamlit 페이지 제목
 st.title("I Pill You - 증상 분석 챗봇")
@@ -36,3 +37,4 @@ def fetch_medical_info(symptom):
             return response.json().get("summary", "정보를 찾을 수 없습니다.")
     except Exception as e:
         return f"오류 발생: {e}"
+=======
